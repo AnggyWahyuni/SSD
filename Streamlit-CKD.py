@@ -4,7 +4,7 @@ import numpy as np
 
 # Membaca model
 try:
-    with open('CKD_RFClassifier.sav', 'rb') as model_file:
+    with open('CKD_RFClassifier.pkl', 'rb') as model_file:
         CKD_model = pickle.load(model_file)
     with open('standardscaler.pkl', 'rb') as scaler_file:
         scaler = pickle.load(scaler_file)
